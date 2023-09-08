@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h3>Evaluación médica previo a trabajo en alturas </h3>
+
+<form action="submit" method="post">     <ul>
+    <h4>
+        Fecha:
+        <input type="date"
+        id = "date"
+        name = "date">
+    </h4>
+    <h4> <label for="Hora">Hora:</label>
+            <input type="time"
+            id = "time"
+            name = "time">
+    </h4>
+    <h4> <label for="login">Login del asociado:</label>
+            <input type="text"
+                   id="login"
+                   name="login">
+    </h4>
+    <h4> <label for="area">Area:</label>  <select name="job" id="job">
+         <option value="IB">IB</option>
+         <option value="OB">OB</option>
+         <option value="ICQA">ICQA</option>
+         <option value="PROC">PROC</option>
+         <option value="SOPORTE">SOPORTE</option>
+         </select>
+    </h4>
+    <h4> <label for="Tipodetrabajador">Tipo de trabajador:</label>  <select name="type" id="type">
+         <option value="Interno">Interno</option>
+         <option value="Externo">Externo</option>
+             </select>
+    </h4>
+    <h4> <label for="Tipodemontacargas">Tipo de montacargas:</label> <select name="montacargas" id="montacargas">
+                <option value="High Reach">High Reach</option>
+                <option value="Order Picker">Order Picker</option>
+		<option value="Forklift">Forklift</option>
+                </select>
+    </h4>
+    <h2> Evalucion Psicofisica
+    </h2>
+       <h4>//Coloca el baumanometro en brazo izquierdo
+       </h4>
+    <h4> <label for="pulso">Pulso:</label> <input id="pulso" name="pulso" type="number"/>
+    </h4>
+    <h4><label for="tensionarterials">Tension Arterial Sistolica:</label> <input id="tensionarterials" type="number" name="tensionarterials" />
+    </h4>
+    <h4><label for="tensionarteriald">Tension Arterial Diastolica:</label> <input id="tensionarteriald" type="number" name="tensionarteriald" />
+    </h4>
+    <h4>¿Haz ingerido alcohol o alguna sustancia tóxica en las últimas 8 horas?
+     <li>
+        <label for="alcohol">
+          <input type="radio" id="alcohol" name="alcohol" value="S" />
+          Si
+        </label>
+      </li>
+         <li>
+        <label for="alcohol">
+          <input type="radio" id="alcohol" name="alcohol" value="N" />
+          No
+        </label>
+      </li>
+        <h4>¿Haz ingerido algun medicamento controlado?
+     <li>
+        <label for="medicamento">
+          <input type="radio" id="medicamento" name="medicamento" value="S" />
+          Si
+        </label>
+      </li>
+      <li>
+        <label for="medicamento">
+          <input type="radio" id="medicamento" name="medicamento" value="N" />
+          No
+        </label>
+      </li>
+            <h4>¿Ha consumido alimento en las ultimas 8 horas?
+     <li>
+        <label for="alimento">
+          <input type="radio" id="alimento" name="alimento" value="S" />
+          Si
+        </label>
+      </li>
+      <li>
+        <label for="alimento">
+          <input type="radio" id="alimento" name="alimento" value="N" />
+          No
+        </label>
+      </li>
+                <h4>Su ultima comida fue a las:</h4>
+    <li>
+      <input type="number" id="horacomida" name="horacomida" />
+    </li>
+                <h4>¿Usa lentes de contacto o gafas?
+     <li>
+        <label for="lentes">
+          <input type="radio" id="lentes" name="lentes" value="S" />
+          Si
+        </label>
+      </li>
+      <li>
+        <label for="lentes">
+          <input type="radio" id="lentes" name="lentes" value="N" />
+          No
+        </label>
+      </li>
+                    <h4>Descripcion del trabajo:</h4>
+ <li>
+      <textarea id="descripcion" name="descripcion"> </textarea>
+    </li>
+
+   </ul>
+    <h3>Prueba de Equilibrio / Solo es para order picker
+<ol>
+  <li>Parado en posicion "T" Brazos extendidos talones juntos puntas separadas</li>
+        <label for="posicion_t">
+          <input type="radio" id="posicion_t" name="posicion_t" value="S" />
+          Si
+        </label>
+
+        <label for="posicion_t">
+          <input type="radio" id="posicion_t" name="posicion_t" value="N" />
+          No
+        </label>
+    <li>Parado en posicion 4 pierna derecha flexionada, brazos extendidos ojos cerrados</li>
+<label for="posicion_4d">
+          <input type="radio" id="posicion_4d" name="posicion_4d" value="S" />
+          Si
+        </label>
+
+        <label for="posicion_4d">
+          <input type="radio" id="posicion_4d" name="posicion_4d" value="N" />
+          No
+        </label>
+      <li>Parado en posicion 4 pierna izquierda flexionada, brazos extendidos ojos cerrados</li>
+<label for="posicion_4l">
+          <input type="radio" id="Posicion_4l" name="posicion_4l" value="S" />
+          Si
+        </label>
+
+        <label for="posicion_4l">
+          <input type="radio" id="posicion_4l" name="posicion_4l" value="N" />
+          No
+        </label>
+</ol>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

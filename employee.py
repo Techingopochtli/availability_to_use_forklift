@@ -1,14 +1,11 @@
 
 class Employee:
 
-    def __init__(self, name, last_name, s_last_name, id_emp):    # initialize Employee with id, name  and last names
+    def __init__(self, id_emp):    # initialize Employee with id, name  and last names
         self.sbp = 120
         self.dbp = 80
         self.pulse = 70
         self.sp02 = 98
-        self.name = name
-        self.last_name = last_name
-        self.s_last_name = s_last_name
         self.id = id_emp
         self.glasses = False
         self.alcohol = False
